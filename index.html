@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Посібник з бази даних мережевих стандартів — повна довідка з OSI, TCP/IP, IEEE та інших стандартів">
+    <title>Головна — База Мережевих Стандартів</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- НАВІГАЦІЯ (однакова на всіх сторінках) -->
+    <header>
+        <nav>
+            <div class="logo">
+                <span>📡</span> База Мережевих Стандартів
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Головна</a></li>
+                <li><a href="about.html">Про проєкт</a></li>
+                <li><a href="catalog.html">Каталог стандартів</a></li>
+                <li><a href="glossary.html">Глосарій</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ГЕРО-СЕКЦІЯ -->
+    <section class="hero">
+        <div class="container">
+            <h1>База даних<br>мережевих стандартів</h1>
+            <p class="hero-subtitle">Повний інтерактивний посібник для студентів, інженерів та IT-фахівців.<br>Усі ключові стандарти в одному місці.</p>
+            <div class="hero-buttons">
+                <a href="catalog.html" class="btn-primary">Переглянути каталог</a>
+                <a href="glossary.html" class="btn-secondary">Відкрити глосарій</a>
+            </div>
+            <div class="hero-stats">
+                <div>150+ стандартів</div>
+                <div>12 моделей</div>
+                <div>Оновлено: 2026</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ОСНОВНИЙ КОНТЕНТ -->
+    <main class="container">
+        <section class="section">
+            <h2>Чому цей посібник?</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>Структурована база</h3>
+                    <p>Зручна таблиця з фільтрами, детальними описами та посиланнями на RFC / IEEE.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔬</div>
+                    <h3>Практичні приклади</h3>
+                    <p>Реальні сценарії використання: від домашньої мережі до корпоративних дата-центрів.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <h3>Готовий до вивчення</h3>
+                    <p>Можна використовувати як навчальний посібник у вишах та на курсах.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <h2>Популярні стандарти цього місяця</h2>
+            <div class="popular-grid">
+                <a href="catalog.html#osi" class="popular-card">
+                    <span class="tag">Модель</span>
+                    <h3>OSI Model</h3>
+                    <p>7-рівнева модель взаємодії відкритих систем</p>
+                </a>
+                <a href="catalog.html#tcpip" class="popular-card">
+                    <span class="tag">Протокол</span>
+                    <h3>TCP/IP</h3>
+                    <p>Основний стек протоколів Інтернету</p>
+                </a>
+                <a href="catalog.html#wifi" class="popular-card">
+                    <span class="tag">IEEE 802.11</span>
+                    <h3>Wi-Fi 7</h3>
+                    <p>Найновіший стандарт бездротового зв’язку (2024)</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Як користуватися сайтом-посібником</h2>
+            <ol class="steps">
+                <li><strong>Каталог стандартів</strong> — шукайте потрібний стандарт за назвою чи організацією.</li>
+                <li><strong>Глосарій</strong> — миттєве пояснення всіх технічних термінів.</li>
+                <li><strong>Фільтри та пошук</strong> — динамічний пошук працює прямо в браузері.</li>
+                <li><strong>Завантажуйте PDF</strong> (кнопка на кожній сторінці) — для офлайн-використання.</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- ФУТЕР (однаковий на всіх сторінках) -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 База Мережевих Стандартів. Усі права захищені. Сайт створено як відкритий навчальний посібник.</p>
+            <p>Версія 1.0 • Чистий HTML + CSS • Готовий до завантаження на будь-який хостинг</p>
+            <div class="footer-links">
+                <a href="about.html">Про проєкт</a> • 
+                <a href="contacts.html">Зворотний зв’язок</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Простий скрипт для активної сторінки (працює на всіх)
+        document.querySelectorAll('.menu a').forEach(link => {
+            if (link.getAttribute('href') === window.location.pathname.split('/').pop() || 
+                (window.location.pathname === '/' && link.getAttribute('href') === 'index.html')) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

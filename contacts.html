@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти — База Мережевих Стандартів</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><span>📡</span> База Мережевих Стандартів</div>
+            <ul class="menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про проєкт</a></li>
+                <li><a href="catalog.html">Каталог стандартів</a></li>
+                <li><a href="glossary.html">Глосарій</a></li>
+                <li><a href="contacts.html" class="active">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero small-hero">
+        <div class="container">
+            <h1>Зворотний зв’язок</h1>
+        </div>
+    </div>
+
+    <main class="container">
+        <form class="contact-form">
+            <label>Ваше ім’я</label>
+            <input type="text" placeholder="Ім’я Прізвище" required>
+            
+            <label>E-mail</label>
+            <input type="email" placeholder="your@email.com" required>
+            
+            <label>Повідомлення</label>
+            <textarea rows="6" placeholder="Напишіть пропозицію, зауваження чи питання..." required></textarea>
+            
+            <button type="submit" class="btn-primary">Надіслати повідомлення</button>
+            <p class="form-note">* Форма працює в демонстраційному режимі. Повідомлення зберігаються локально.</p>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 База Мережевих Стандартів. Усі права захищені. Сайт створено як відкритий навчальний посібник.</p>
+            <p>Версія 1.0 • Чистий HTML + CSS • Готовий до завантаження на будь-який хостинг</p>
+            <div class="footer-links">
+                <a href="about.html">Про проєкт</a> • 
+                <a href="contacts.html">Зворотний зв’язок</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Демонстраційна обробка форми
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Дякуємо! Ваше повідомлення отримано (демо-режим).');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
