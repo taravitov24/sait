@@ -117,37 +117,7 @@
             }
         });
     </script>
-    <!-- Контейнер для баннера с защитой от "прыжков" верстки -->
-<div class="advertising-banner-container" style="margin: 20px auto; max-width: 728px; min-height: 90px; text-align: center;">
     
-    <!-- Ссылка и изображение баннера (Пример: партнерский товар) -->
-    <a href="https://eedst.com" target="_blank" rel="noopener nofollow" id="live-ad-link" style="display: inline-block; width: 100%;">
-        <img src="https://picsum.photos" alt="Реклама" id="live-ad-img" style="width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; display: block;">
-    </a>
-
-    <!-- Рабочий JS-скрипт трекинга и ротации (срабатывает сразу) -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const adLink = document.getElementById("live-ad-link");
-            const adImg = document.getElementById("live-ad-img");
-
-            // Пример простой ротации: если у пользователя мобильный, меняем баннер на узкий
-            if (window.innerWidth < 768) {
-                adImg.src = "https://picsum.photos"; // Мобильный формат
-                adImg.style.maxWidth = "300px";
-            }
-
-            // Трекинг показа в консоль (имитация отправки статистики на сервер рекламодателя)
-            console.log("Рекламный блок успешно загружен. ID кампании: LIVE-728");
-
-            // Сбор статистики кликов
-            adLink.addEventListener("click", function(event) {
-                console.log("Пользователь кликнул по рекламе. Перенаправление...");
-                // Здесь реальные сети отправляют фоновый пиксель перед уходом со страницы
-            });
-        });
-    </script>
-</div>
 
 </body>
 </html>
